@@ -53,7 +53,7 @@ fastify.post('/upload', async (request, reply) => {
 
 const start = async () => {
     try {
-        await fastify.listen(3000)
+        await fastify.listen(process.env.PORT || 3000)
         console.log(`Server listening on ${fastify.server.address().port}`)
     } catch (error) {
         fastify.log.error(error)
