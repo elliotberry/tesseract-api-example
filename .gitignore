@@ -5,10 +5,10 @@
 *.exe
 *.o
 *.so
-
+.env
 # Logs and databases
 *.log
-
+eng.traineddata
 # OS generated files #
 .DS_Store
 .AppleDouble
